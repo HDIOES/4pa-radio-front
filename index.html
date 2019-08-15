@@ -1,0 +1,165 @@
+<html>
+
+<style>
+    body {
+        width: 100%;
+        background: rgb(32,36,51);
+        background: radial-gradient(circle, rgba(32,36,51,1) 0%, rgba(0,0,0,1) 100%);
+    }
+
+    .album-preview {
+        background-color: black;
+        width: 400px;
+        height: 400px;
+        border-radius: 400px;
+        overflow: hidden;
+        border: 0px solid #FF9800;
+        object-fit: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+
+    }
+
+    .box-shadow {}
+
+    .album-preview:hover {
+        border: 0px solid #03A9F4;
+    }
+
+    .control-icon-button {
+
+        background: transparent;
+        margin: 0 10 10 0;
+        width: 120px;
+        height: 120px;
+        border: 0px solid #000;
+    }
+
+
+    .control-icon-button:focus {
+        outline: 0 !important;
+    }
+
+    .control-icon-button:hover {
+        color: #000;
+    }
+
+    .control-play-button {
+        
+        background-image: url("assets/svg/play-button.svg");
+    }
+
+    .control-play-button:hover {
+        background-image: url("assets/svg/play-button-alt.svg");
+    }
+
+    .control-play-next-button {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: -15px;
+        background-image: url("assets/svg/play-button-next.svg");
+    }
+
+    .control-play-next-button:hover {
+     
+        background-image: url("assets/svg/play-button-next-alt.svg");
+    }
+
+    .control-play-prev-button {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: -15px;
+        transform: rotate(180deg);
+        background-image: url("assets/svg/play-button-next.svg");
+    }
+
+    .control-play-prev-button:hover {
+       
+        background-image: url("assets/svg/play-button-next-alt.svg");
+    }
+
+    .center {
+        margin: auto;
+    }
+
+    .center-image {
+        width: 400px;
+        margin: auto;
+    }
+
+    .play-controls {
+        width: 318px;
+
+    }
+
+    .margin-top {
+        margin: 30px auto;
+    }
+
+
+    @font-face {
+        font-family: 'main-regular';
+        src: URL('Comfortaa-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'main-bold';
+        src: URL('Comfortaa-Bold.ttf') format('truetype');
+    }
+
+    .track-tittle-artist {
+        font-family: 'main-bold';
+    }
+
+    .track-tittle {
+        font-family: 'main-regular';
+        text-align: center;
+        font-size: 35px;
+        color: #FF9800;
+    }
+
+    .cpa-radio-h1{
+        font-family: 'main-bold';
+        text-align: center;
+        font-size: 50px;
+        color: #FF9800;
+    }
+</style>
+
+<body>
+
+    <div class="center">
+        <h1 class="cpa-radio-h1">
+            4PA radio
+        </h1>
+        <div class="center-image">
+            <img class="album-preview  box-shadow" src="anime.jpeg"> <!-- cover-->
+        </div>
+
+        <p class="track-tittle center margin-top">
+            <span class="track-tittle-artist">
+                    Robot Girls Z
+            </span> <br />
+           Opening 1
+        </p>
+
+        <div class="play-controls margin-top">
+            <button class="control-icon-button control-play-prev-button">
+                <!-- prev-->
+            </button>
+            <button class="control-icon-button control-play-button">
+                <!-- play-->
+            </button>
+            <button class="control-icon-button control-play-next-button">
+                <!-- next-->
+            </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
