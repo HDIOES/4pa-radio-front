@@ -10,8 +10,10 @@ var audio = new Audio('');
 $().ready(function () {
     $("#play-button").click(function () {
         if (audio.paused) {
+            $(this).attr("class", "control-icon-button control-pause-button");
             playAt(position);
         } else {
+            $(this).attr("class", "control-icon-button control-play-button");
             audio.pause();
         }
 

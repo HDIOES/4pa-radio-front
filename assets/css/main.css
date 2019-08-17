@@ -55,6 +55,15 @@ body {
     background-image: url("/assets/svg/play-button.svg");
 }
 
+.control-pause-button{
+    background-image: url("/assets/svg/pause-button.svg");
+}
+
+.control-pause-button:hover{
+    background-image: url("/assets/svg/pause-button-alt.svg");
+}
+
+
 .control-play-button:hover {
     background-image: url("/assets/svg/play-button-alt.svg");
 }
