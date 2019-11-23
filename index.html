@@ -1,39 +1,51 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>4PA Radio</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/input-range.css">
 
 </head>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/Vibrant.min.js"></script>
 <script src="/assets/js/main.js"></script>
 
 <body>
 
     <div class="center">
-        <h1 class="cpa-radio-h1">
-            4PA radio
+        <h1 class="main-color cpa-radio-h1">
+            4PA radio 
         </h1>
         <div class="center-image">
-            <img class="album-preview  box-shadow" src="anime.jpeg"> <!-- cover-->
+            <canvas height='600px' width="600px" style="position: absolute; z-index: 10; margin: -100px" id="progress-circle"></canvas>
+
+            <canvas height='600px' width="600px" style="position: absolute; z-index: 10; margin: -100px" id="circle"></canvas>
+            <img id="playing-cover-image" class="album-preview  box-shadow" src="/assets/svg/music-player.svg">
+            <!-- cover-->
         </div>
 
-        <p class="track-tittle center margin-top">
-            <span class="track-tittle-artist">
-                Robot Girls Z
+        <p style="margin: 120px auto auto" class="main-color track-tittle center margin-top">
+            <span id="playing-track-artist" class="track-tittle-artist">
+                
             </span> <br />
-            Opening 1
+            <span id="playing-track-title">
+                
+            </span>
         </p>
 
         <div class="play-controls margin-top">
-            <button id="play-prev" class="control-icon-button control-play-prev-button">
+            <button id="play-prev" class="main-color control-hover-color control-icon-button control-play-prev-button">
+                B
                 <!-- prev-->
             </button>
-            <button id="play-button" class="control-icon-button control-play-button">
+    
+            <button id="play-button" class="main-color control-hover-color control-icon-button control-play-button">
+                C
                 <!-- play-->
             </button>
-            <button id="play-next" class="control-icon-button control-play-next-button">
+            <button id="play-next" class="main-color control-hover-color control-icon-button control-play-next-button">
+                A
                 <!-- next-->
             </button>
             <div class="volume-control-margin">

@@ -8,19 +8,30 @@
     src: URL('/assets/fonts/Comfortaa-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'icon-font';
+    src: URL('/assets/fonts/icon.ttf') format('truetype');
+}
+
 body {
-    width: 100%;
     background: rgb(32, 36, 51);
     background: radial-gradient(circle, rgba(32, 36, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+   
+}
+
+.main-color{
+    color: #FF9800;
+}
+
+.main-color:hover{
+    color: #FFF;
 }
 
 .album-preview {
-    background-color: black;
     width: 400px;
     height: 400px;
     border-radius: 400px;
-    overflow: hidden;
-    border: 0px solid #FF9800;
+    overflow: hidden;  
     object-fit: cover;
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,12 +39,10 @@ body {
 
 }
 
-.album-preview:hover {
-    border: 0px solid #03A9F4;
-}
-
 .control-icon-button {
 
+    font-family: 'icon-font';
+    font-size: 80px;
     background: transparent;
     margin: 0 0 0 10;
     width: 120px;
@@ -50,10 +59,11 @@ body {
     color: #000;
 }
 
-.control-play-button {
 
-    background-image: url("/assets/svg/play-button.svg");
+.control-play-button {
+    font-size: 120px;
 }
+/*
 
 .control-pause-button{
     background-image: url("/assets/svg/pause-button.svg");
@@ -68,31 +78,35 @@ body {
     background-image: url("/assets/svg/play-button-alt.svg");
 }
 
+*/
+
 .control-play-next-button {
     width: 80px;
     height: 80px;
     position: relative;
     top: -15px;
-    background-image: url("/assets/svg/play-button-next.svg");
+   /* background-image: url("/assets/svg/play-button-next.svg"); */
 }
 
 .control-play-next-button:hover {
 
-    background-image: url("/assets/svg/play-button-next-alt.svg");
+   /* background-image: url("/assets/svg/play-button-next-alt.svg"); */
 }
 
 .control-play-prev-button {
     width: 80px;
     height: 80px;
+   
     position: relative;
     top: -15px;
+    /* 
     transform: rotate(180deg);
-    background-image: url("/assets/svg/play-button-next.svg");
+   background-image: url("/assets/svg/play-button-next.svg"); */
 }
 
 .control-play-prev-button:hover {
 
-    background-image: url("/assets/svg/play-button-next-alt.svg");
+   /* background-image: url("/assets/svg/play-button-next-alt.svg"); */
 }
 
 .center {
@@ -101,7 +115,7 @@ body {
 
 .center-image {
     width: 400px;
-    margin: auto;
+    margin: 50 auto 50;
 }
 
 .play-controls {
@@ -126,12 +140,11 @@ body {
     font-family: 'main-regular';
     text-align: center;
     font-size: 35px;
-    color: #FF9800;
+  
 }
 
 .cpa-radio-h1 {
     font-family: 'main-bold';
     text-align: center;
     font-size: 50px;
-    color: #FF9800;
 }
